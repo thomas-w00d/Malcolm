@@ -2847,7 +2847,7 @@ def wipe_indices(dates=None):
         insecure = True
         print(f"Using OpenSearch credentials from auth.env: insecure={insecure}")
 
-    # Helper to run curl in right context
+    # Helper function to run curl in right context
     def run_curl(cmd_curl, extra_args=None, method=None):
         base = ['curl', '-s', '-u', user]
         if insecure:
